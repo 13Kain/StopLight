@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var greenLightView: UIView!
     @IBOutlet var newLightButton: UIButton!
     
+    var status = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         redLightView.layer.cornerRadius = 80
@@ -23,20 +25,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func getNewLightButton() {
-        if greenLightView.alpha < 1 {
+        newLightButton.setTitle("Next", for: .normal)
+        status += 1
+        
+        switch status {
+        case 1:
+            greenLightView.alpha = 0.3
             redLightView.alpha = 1
-            newLightButton.setTitle("NEXT", for: .normal)
-        } else if redLightView.alpha == 1 && yellowLightView.alpha == 0.35  {
-            redLightView.alpha = 0.35
+        case 2:
+            redLightView.alpha = 0.3
             yellowLightView.alpha = 1
-        } else if yellowLightView.alpha == 1 {
-            yellowLightView.alpha = 0.35
+        default:
+            yellowLightView.alpha = 0.3
             greenLightView.alpha = 1
-        } else {
-            greenLightView.alpha = 0.35
+            status = 0
         }
-        }
-    
-    
+    }
 }
 

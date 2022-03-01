@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBk-C7-Ein">
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBk-C7-Ein">
                                 <rect key="frame" x="129" y="238" width="170" height="170"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scz-LL-Cgm">
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scz-LL-Cgm">
                                 <rect key="frame" x="129" y="60" width="170" height="170"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkk-6M-CWK">
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkk-6M-CWK">
                                 <rect key="frame" x="129" y="416" width="170" height="170"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
@@ -49,7 +49,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="Scz-LL-Cgm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="2mt-4V-vEN"/>
                             <constraint firstItem="uBk-C7-Ein" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="129" id="3zq-Ac-jSP"/>
                             <constraint firstItem="Scz-LL-Cgm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="7MV-2O-us7"/>
                             <constraint firstItem="uBk-C7-Ein" firstAttribute="top" secondItem="Scz-LL-Cgm" secondAttribute="bottom" constant="8" id="8vv-ts-7PV"/>
